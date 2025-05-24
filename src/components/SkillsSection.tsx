@@ -1,0 +1,43 @@
+
+import React from 'react';
+import { Zap, Code, Database, Cloud, Settings, Users } from 'lucide-react'; // Example icons
+
+const skillsData = [
+  { name: 'JavaScript (ES6+)', Icon: Code, description: "Modern JavaScript development including asynchronous programming, and new syntax features." },
+  { name: 'React & Next.js', Icon: Code, description: "Building dynamic and responsive user interfaces with component-based architecture." },
+  { name: 'TypeScript', Icon: Code, description: "Enhancing JavaScript projects with static typing for better scalability and maintainability." },
+  { name: 'Node.js & Express', Icon: Database, description: "Developing server-side applications and RESTful APIs." },
+  { name: 'Tailwind CSS', Icon: Settings, description: "Rapidly building custom user interfaces with a utility-first CSS framework." },
+  { name: 'Python & Django', Icon: Code, description: "Full-stack development with Python, creating robust web applications." },
+  { name: 'Databases (SQL & NoSQL)', Icon: Database, description: "Working with PostgreSQL, MongoDB, and Firebase for data storage and management." },
+  { name: 'Cloud Platforms (AWS, Vercel)', Icon: Cloud, description: "Deploying and managing applications on cloud infrastructure." },
+  { name: 'Agile Methodologies', Icon: Users, description: "Collaborating in agile environments, participating in sprints, and using tools like Jira." },
+  { name: 'UI/UX Design Principles', Icon: Zap, description: "Basic understanding of design principles for creating user-friendly interfaces." },
+];
+
+const SkillsSection = () => {
+  return (
+    <section id="skills" className="bg-brand-deep-blue">
+      <div className="container mx-auto">
+        <h2 className="section-title animate-on-scroll">Skills</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {skillsData.map((skill, index) => (
+            <div
+              key={skill.name}
+              className="bg-brand-light-navy p-6 rounded-lg shadow-lg hover:shadow-brand-teal/20 transition-all duration-300 transform hover:-translate-y-1 animate-on-scroll"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="flex items-center mb-4">
+                <skill.Icon className="text-brand-teal mr-3" size={28} />
+                <h3 className="text-xl font-semibold text-brand-light-slate">{skill.name}</h3>
+              </div>
+              <p className="text-brand-slate text-sm">{skill.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SkillsSection;

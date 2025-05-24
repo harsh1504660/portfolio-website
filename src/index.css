@@ -1,0 +1,102 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 43% 11%; /* brand-deep-blue */
+    --foreground: 220 27% 88%; /* brand-light-slate */
+
+    --card: 220 43% 15%; /* brand-light-navy */
+    --card-foreground: 220 27% 88%; /* brand-light-slate */
+
+    --popover: 220 43% 11%;
+    --popover-foreground: 220 27% 88%;
+
+    --primary: 160 100% 70%; /* brand-teal */
+    --primary-foreground: 220 43% 11%; /* brand-deep-blue for text on primary bg */
+
+    --secondary: 220 25% 60%; /* brand-slate */
+    --secondary-foreground: 220 27% 88%;
+
+    --muted: 220 43% 15%;
+    --muted-foreground: 220 25% 60%;
+
+    --accent: 160 100% 70%;
+    --accent-foreground: 220 43% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 43% 25%; /* A slightly lighter border */
+    --input: 220 43% 20%;
+    --ring: 160 100% 70%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Keep dark mode consistent with the primary theme for now */
+    --background: 220 43% 11%;
+    --foreground: 220 27% 88%;
+    --card: 220 43% 15%;
+    --card-foreground: 220 27% 88%;
+    --popover: 220 43% 11%;
+    --popover-foreground: 220 27% 88%;
+    --primary: 160 100% 70%;
+    --primary-foreground: 220 43% 11%;
+    --secondary: 220 25% 60%;
+    --secondary-foreground: 220 27% 88%;
+    --muted: 220 43% 15%;
+    --muted-foreground: 220 25% 60%;
+    --accent: 160 100% 70%;
+    --accent-foreground: 220 43% 11%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 43% 25%;
+    --input: 220 43% 20%;
+    --ring: 160 100% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    scroll-behavior: smooth;
+  }
+
+  section {
+    @apply min-h-screen py-20 px-4 md:px-8 lg:px-16 flex flex-col justify-center;
+  }
+  
+  /* Add a class for animating elements on scroll */
+  .animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-brand-light-slate mb-8 text-center relative pb-4;
+  }
+  .section-title::after {
+    content: '';
+    @apply block w-20 h-1 bg-brand-teal mx-auto mt-2;
+  }
+}

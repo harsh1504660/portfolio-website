@@ -1,17 +1,18 @@
 
 import React from 'react';
-import { Zap, Code, Database, Cloud, Settings, Users } from 'lucide-react'; // Example icons
+import { Zap, Code, Database, Cloud, Settings, Users ,Bot,Library} from 'lucide-react'; // Example icons
 
 const skillsData = [
+  { name: 'Python & Django', Icon: Code, description: "Full-stack development with Python, creating robust web applications." },
+  { name: 'TensorFlow & Pytorch', Icon: Bot, description: "building and training deep learning models for computer vision and classification tasks." },
+  { name: 'TensorFlow & Pytorch', Icon: Bot, description: "building and training deep learning models for computer vision and classification tasks." },
+  { name: 'HugginFace & MLfLOW', Icon: Library, des: "managing machine learning workflows and transformers for state-of-the-art NLP model development." },
   { name: 'JavaScript (ES6+)', Icon: Code, description: "Modern JavaScript development including asynchronous programming, and new syntax features." },
   { name: 'React & Next.js', Icon: Code, description: "Building dynamic and responsive user interfaces with component-based architecture." },
   { name: 'TypeScript', Icon: Code, description: "Enhancing JavaScript projects with static typing for better scalability and maintainability." },
   { name: 'Node.js & Express', Icon: Database, description: "Developing server-side applications and RESTful APIs." },
-  { name: 'Tailwind CSS', Icon: Settings, description: "Rapidly building custom user interfaces with a utility-first CSS framework." },
-  { name: 'Python & Django', Icon: Code, description: "Full-stack development with Python, creating robust web applications." },
-  { name: 'Databases (SQL & NoSQL)', Icon: Database, description: "Working with PostgreSQL, MongoDB, and Firebase for data storage and management." },
-  { name: 'Cloud Platforms (AWS, Vercel)', Icon: Cloud, description: "Deploying and managing applications on cloud infrastructure." },
-  { name: 'Agile Methodologies', Icon: Users, description: "Collaborating in agile environments, participating in sprints, and using tools like Jira." },
+  { name: 'Databases (SQL & NoSQL)', Icon: Database, description: "Working with MongoDB, and Firebase for data storage and management." },
+  { name: 'Cloud Platforms (GCP, Vercel)', Icon: Cloud, description: "Deploying and managing applications on cloud infrastructure." },
   { name: 'UI/UX Design Principles', Icon: Zap, description: "Basic understanding of design principles for creating user-friendly interfaces." },
 ];
 

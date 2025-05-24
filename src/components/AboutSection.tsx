@@ -18,12 +18,12 @@ const AboutSection = () => {
               Here are a few technologies I've been working with recently:
             </p>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-2 font-mono text-sm">
-              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">JavaScript (ES6+)</li>
-              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">React</li>
-              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">TypeScript</li>
-              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">Node.js</li>
-              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">Tailwind CSS</li>
-              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">Next.js</li>
+              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">Machine Learning (ES6+)</li>
+              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">Depp Learning</li>
+              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">Natural Language Processing</li>
+              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">Computer Vision</li>
+              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">MLOps</li>
+              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">Web Development</li>
             </ul>
           </div>
           <div className="md:col-span-2 flex justify-center animate-on-scroll" style={{ animationDelay: '0.4s' }}>

@@ -24,7 +24,7 @@ const projectsData: Project[] = [
   },
   {
     id: 2,
-    title: 'E-commerce Platform',
+    title: 'Smart Answer Evaluater',
     description: 'A full-featured e-commerce site with product listings, cart functionality, user authentication, and a Stripe payment integration. Developed using Next.js and Supabase.',
     imageUrl: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGVjb21tZXJjZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
     technologies: ['Next.js', 'Supabase', 'Stripe', 'Tailwind CSS'],
@@ -33,7 +33,7 @@ const projectsData: Project[] = [
   },
   {
     id: 3,
-    title: 'Task Management App',
+    title: 'Hand Gesture VLC Media Controller',
     description: 'A collaborative task management application allowing users to create, assign, and track tasks. Features real-time updates with Firebase.',
     imageUrl: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2plY3QlMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
     technologies: ['React', 'Firebase', 'Material UI'],
@@ -41,7 +41,7 @@ const projectsData: Project[] = [
   },
   {
     id: 4,
-    title: "Awesome Project Alpha",
+    title: "Agri Spectra AI [MVP]",
     description: "This is a fantastic project that does amazing things with modern technology. More details coming soon! You can replace this text.",
     imageUrl: 'https://via.placeholder.com/500x280/64FFDA/0A192F?text=Project+Alpha', // Teal bg, Deep Blue text
     technologies: ['Placeholder Tech 1', 'Placeholder Tech 2', 'Animated CSS'],
@@ -50,7 +50,7 @@ const projectsData: Project[] = [
   },
   {
     id: 5,
-    title: "Creative Suite Beta",
+    title: "Diabetes Prediction App",
     description: "A suite of tools designed to boost creativity and productivity. Stay tuned for the launch. Feel free to update this.",
     imageUrl: 'https://via.placeholder.com/500x280/FF69B4/0A192F?text=Project+Beta', // Hot Pink bg, Deep Blue text
     technologies: ['Interactive SVG', 'Web Animations API', 'Cartoon.js'],
@@ -59,7 +59,7 @@ const projectsData: Project[] = [
   },
   {
     id: 6,
-    title: "Project Gamma Wave",
+    title: "Laptop Price Predictor",
     description: "Exploring new frontiers in web development and user experience. Exciting updates ahead! This description is editable.",
     imageUrl: 'https://via.placeholder.com/500x280/8A2BE2/FFFFFF?text=Project+Gamma', // Blue Violet bg, White text
     technologies: ['Next-Gen Framework', 'AI Integrations', 'Funky Animations'],

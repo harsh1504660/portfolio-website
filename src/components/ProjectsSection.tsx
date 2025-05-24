@@ -26,7 +26,7 @@ const projectsData: Project[] = [
     id: 2,
     title: 'Smart Answer Evaluater',
     description: 'A full-featured e-commerce site with product listings, cart functionality, user authentication, and a Stripe payment integration. Developed using Next.js and Supabase.',
-    imageUrl: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGVjb21tZXJjZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+    imageUrl: '/sae1.png',
     technologies: ['Next.js', 'Supabase', 'Stripe', 'Tailwind CSS'],
     liveLink: '#',
     repoLink: '#',
@@ -35,7 +35,7 @@ const projectsData: Project[] = [
     id: 3,
     title: 'Hand Gesture VLC Media Controller',
     description: 'A collaborative task management application allowing users to create, assign, and track tasks. Features real-time updates with Firebase.',
-    imageUrl: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2plY3QlMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
+    imageUrl: '/hgvc.png',
     technologies: ['React', 'Firebase', 'Material UI'],
     liveLink: '#',
   },
@@ -52,7 +52,7 @@ const projectsData: Project[] = [
     id: 5,
     title: "Diabetes Prediction App",
     description: "A suite of tools designed to boost creativity and productivity. Stay tuned for the launch. Feel free to update this.",
-    imageUrl: 'https://via.placeholder.com/500x280/FF69B4/0A192F?text=Project+Beta', // Hot Pink bg, Deep Blue text
+    imageUrl: '/dd.png', // Hot Pink bg, Deep Blue text
     technologies: ['Interactive SVG', 'Web Animations API', 'Cartoon.js'],
     liveLink: '#',
     repoLink: '#',
@@ -61,7 +61,7 @@ const projectsData: Project[] = [
     id: 6,
     title: "Laptop Price Predictor",
     description: "Exploring new frontiers in web development and user experience. Exciting updates ahead! This description is editable.",
-    imageUrl: 'https://via.placeholder.com/500x280/8A2BE2/FFFFFF?text=Project+Gamma', // Blue Violet bg, White text
+    imageUrl:'/lpp.png', // Blue Violet bg, White text
     technologies: ['Next-Gen Framework', 'AI Integrations', 'Funky Animations'],
     liveLink: '#',
   },
@@ -91,7 +91,7 @@ const ProjectsSection = () => {
                   <img 
                     src={project.imageUrl} 
                     alt={project.title} 
-                    className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110" 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                   />
                   <div className="absolute inset-0 bg-brand-deep-blue/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     {project.liveLink && (

@@ -29,7 +29,7 @@ const AboutSection = () => {
           <div className="md:col-span-2 flex justify-center animate-on-scroll" style={{ animationDelay: '0.4s' }}>
             <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-md bg-brand-teal relative group">
               <img
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvJTIwd2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                src="/I.jpg"
                 alt="Your Name"
                 className="absolute inset-0 w-full h-full object-cover rounded-md z-10 transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2"
               />

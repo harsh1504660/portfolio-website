@@ -23,16 +23,16 @@ const ContactSection = () => {
         </div>
 
         <div className="mt-16 flex justify-center space-x-6 animate-on-scroll" style={{ animationDelay: '0.4s' }}>
-            <a href="mailto:your.email@example.com" aria-label="Email me" className="text-brand-slate hover:text-brand-teal transition-colors">
+            <a href="mailto:harshsmj1504@gmail.com" aria-label="Email me" className="text-brand-slate hover:text-brand-teal transition-colors">
                 <Mail size={28} />
             </a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="My GitHub profile" className="text-brand-slate hover:text-brand-teal transition-colors">
+            <a href="https://github.com/harsh1504660" target="_blank" rel="noopener noreferrer" aria-label="My GitHub profile" className="text-brand-slate hover:text-brand-teal transition-colors">
                 <Github size={28} />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="My LinkedIn profile" className="text-brand-slate hover:text-brand-teal transition-colors">
+            <a href="https://www.linkedin.com/in/harsh-joshi-20a30b20b/" target="_blank" rel="noopener noreferrer" aria-label="My LinkedIn profile" className="text-brand-slate hover:text-brand-teal transition-colors">
                 <Linkedin size={28} />
             </a>
-            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="My Twitter profile" className="text-brand-slate hover:text-brand-teal transition-colors">
+            <a href="https://x.com/Harsh_J1504" target="_blank" rel="noopener noreferrer" aria-label="My Twitter profile" className="text-brand-slate hover:text-brand-teal transition-colors">
                 <Twitter size={28} />
             </a>
         </div>

@@ -37,7 +37,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-brand-light-navy shadow-lg py-4' : 'py-6 bg-transparent'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="text-2xl font-bold font-serif text-brand-teal hover:text-brand-light-slate transition-colors">
-          Your Name
+          Harsh Joshi
         </a>
         <div className="hidden md:flex space-x-6">
           {navLinks.map((link) => (

@@ -18,7 +18,7 @@ const certificatesData: Certificate[] = [
     issuingOrganization: 'Udemy',
     date: 'Issued March 2024',
     credentialUrl: 'https://www.udemy.com/certificate/UC-e800a629-9f0d-4c4a-8339-859dbb497768/',
-    imageUrl: 'public/certi1.jpg',
+    imageUrl: 'src/public/certi1.jpg',
   },
 
   {
@@ -27,7 +27,7 @@ const certificatesData: Certificate[] = [
     issuingOrganization: 'Udemy',
     date: 'Issued Oct 2023',
     credentialUrl: 'https://www.udemy.com/certificate/UC-302ff557-2612-4ee9-98b8-0c1e4f41838e/',
-    imageUrl: 'public/certi3.webp',
+    imageUrl: 'src/public/certi3.webp',
   },
     {
     id: 3,
@@ -35,7 +35,7 @@ const certificatesData: Certificate[] = [
     issuingOrganization: 'Udemy',
     date: 'Issued June 2024',
     credentialUrl: 'https://www.udemy.com/certificate/UC-45bd925e-86a7-4ebc-91d8-5c8c1b16020c/',
-    imageUrl: 'public/certi2.jpg',
+    imageUrl: 'src/public/certi2.jpg',
   },
     {
     id: 4,
@@ -43,7 +43,7 @@ const certificatesData: Certificate[] = [
     issuingOrganization: 'Udemy',
     date: 'Issued Apr 2021',
     credentialUrl: 'https://www.udemy.com/certificate/UC-7a726d68-bc15-4510-9035-70df04fc1582/',
-    imageUrl: 'public/certi4.webp',
+    imageUrl: 'src/public/certi4.webp',
   },
 ];
 

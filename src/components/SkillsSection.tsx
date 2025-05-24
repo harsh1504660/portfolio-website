@@ -5,7 +5,6 @@ import { Zap, Code, Database, Cloud, Settings, Users ,Bot,Library} from 'lucide-
 const skillsData = [
   { name: 'Python & Django', Icon: Code, description: "Full-stack development with Python, creating robust web applications." },
   { name: 'TensorFlow & Pytorch', Icon: Bot, description: "building and training deep learning models for computer vision and classification tasks." },
-  { name: 'TensorFlow & Pytorch', Icon: Bot, description: "building and training deep learning models for computer vision and classification tasks." },
   { name: 'HugginFace & MLfLOW', Icon: Library, des: "managing machine learning workflows and transformers for state-of-the-art NLP model development." },
   { name: 'JavaScript (ES6+)', Icon: Code, description: "Modern JavaScript development including asynchronous programming, and new syntax features." },
   { name: 'React & Next.js', Icon: Code, description: "Building dynamic and responsive user interfaces with component-based architecture." },

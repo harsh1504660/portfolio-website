@@ -31,7 +31,7 @@ const HeroSection = () => {
             Get In Touch
           </Button>
           <a
-            href="/harsh_joshi_resume.docx"
+            href="/harsh_joshi_resume.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"

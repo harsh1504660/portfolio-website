@@ -17,7 +17,7 @@ const projectsData: Project[] = [
   {
     id: 1,
     title: 'Personal Portfolio Website',
-    description: 'The very website you are browsing! Built with React, TypeScript, Tailwind CSS, and Vite. Showcases my skills and projects in a clean, responsive design.',
+    description: 'My portfolio website! Built with React, TypeScript, Tailwind CSS, and Vite. Showcases my skills and projects in a clean, responsive design.',
     imageUrl: '/ss.png',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
     liveLink: 'https://harsh-joshi-portfolio-zeta.vercel.app/', // Link to itself
@@ -26,7 +26,7 @@ const projectsData: Project[] = [
   {
     id: 2,
     title: 'Smart Answer Evaluater',
-    description: 'A full-featured e-commerce site with product listings, cart functionality, user authentication, and a Stripe payment integration. Developed using Next.js and Supabase.',
+    description: 'AI enabled answer evaluator that uses a transformer model to evaluate answers based on the given question. It provides a score and feedback on the answer.',
     imageUrl: '/sae1.png',
     technologies: ['Tensorflow', 'Transformer', 'Flask', 'HTML/CSS','FastAPI'],
     liveLink: 'https://smart-answer-evaluator.onrender.com',
@@ -35,7 +35,7 @@ const projectsData: Project[] = [
   {
     id: 3,
     title: 'Hand Gesture VLC Media Controller',
-    description: 'A collaborative task management application allowing users to create, assign, and track tasks. Features real-time updates with Firebase.',
+    description: 'A hand gesture-based media controller that uses computer vision to control VLC media player. It recognizes hand gestures and maps them to media controls like play, pause, next, and previous.',
     imageUrl: '/hgvc.png',
     technologies: ['Tensorflow', 'Tkinter', 'Material UI'],
     repoLink: 'https://github.com/harsh1504660/Gesture-Media-Controller',
@@ -43,7 +43,7 @@ const projectsData: Project[] = [
   {
     id: 4,
     title: "Agri Spectra AI [MVP]",
-    description: "This is a fantastic project that does amazing things with modern technology. More details coming soon! You can replace this text.",
+    description: "Agri Spectra AI is an AI-powered platform that provides insights into agricultural data. It uses machine learning to analyze crop health, predict yields, and optimize farming practices.",
     imageUrl: '/agri.png', // Teal bg, Deep Blue text
     technologies: ['Node.js', 'React', 'Python', 'Firebase','GCP'],
     liveLink: 'https://agri-spectra.com/',
@@ -52,7 +52,7 @@ const projectsData: Project[] = [
   {
     id: 5,
     title: "Diabetes Prediction App",
-    description: "A suite of tools designed to boost creativity and productivity. Stay tuned for the launch. Feel free to update this.",
+    description: "A web application that predicts the likelihood of diabetes based on user input. It uses machine learning models to analyze health data and provide predictions.",
     imageUrl: '/dd.png', // Hot Pink bg, Deep Blue text
     technologies: ['Scikit-learn', 'Streamlit', 'MLFlow', 'Pandas'],
     liveLink: 'https://diabetes-predictor-ankmxawcztpjgcsmlkyybw.streamlit.app/',
@@ -61,7 +61,7 @@ const projectsData: Project[] = [
   {
     id: 6,
     title: "Laptop Price Predictor",
-    description: "Exploring new frontiers in web development and user experience. Exciting updates ahead! This description is editable.",
+    description: "A web application that predicts laptop prices based on specifications. It uses machine learning models to analyze laptop features and provide price predictions.",
     imageUrl:'/lap.jpg', // Blue Violet bg, White text
     technologies: ['Scikit-Learn', 'Streamlit', 'Numpy', 'Pandas'],
     liveLink: 'https://laptop-price-predictor-jsbziud4ibtybumfx7mmkj.streamlit.app/',

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button'; // Assuming you have a Button component
 
@@ -21,15 +20,30 @@ const HeroSection = () => {
           I build AI for the web.
         </h3>
         <p className="text-brand-slate text-base sm:text-lg md:text-xl max-w-xl mx-auto mb-12">
-          I'm an AI/ML enthusiast with experience in deep learning, computer vision, and data science. I build real-world projects in areas like chemical reaction prediction, plant disease detection, and food analysis
+          I'm an AI/ML enthusiast with experience in deep learning, computer vision, and data science. I build real-world projects in areas like chemical reaction prediction, plant disease detection, and food analysis.
         </p>
-        <Button 
-          onClick={scrollToContact}
-          variant="outline" 
-          className="border-brand-teal text-brand-teal hover:bg-brand-teal hover:text-brand-deep-blue py-3 px-8 text-lg transition-all duration-300"
-        >
-          Get In Touch
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button
+            onClick={scrollToContact}
+            variant="outline"
+            className="border-brand-teal text-brand-teal hover:bg-brand-teal hover:text-brand-deep-blue py-3 px-8 text-lg transition-all duration-300"
+          >
+            Get In Touch
+          </Button>
+          <a
+            href="/harsh_joshi_resume.docx"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              variant="outline"
+              className="border-brand-teal text-brand-teal hover:bg-brand-teal hover:text-brand-deep-blue py-3 px-8 text-lg transition-all duration-300"
+            >
+              My Resume
+            </Button>
+          </a>
+        </div>
       </div>
     </section>
   );

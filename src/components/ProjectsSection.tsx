@@ -62,7 +62,7 @@ const projectsData: Project[] = [
     id: 6,
     title: "Laptop Price Predictor",
     description: "Exploring new frontiers in web development and user experience. Exciting updates ahead! This description is editable.",
-    imageUrl:'/lpp.png', // Blue Violet bg, White text
+    imageUrl:'/lap.jpg', // Blue Violet bg, White text
     technologies: ['Scikit-Learn', 'Streamlit', 'Numpy', 'Pandas'],
     liveLink: 'https://laptop-price-predictor-jsbziud4ibtybumfx7mmkj.streamlit.app/',
     repoLink: 'https://github.com/harsh1504660/Laptop-price-predictor'

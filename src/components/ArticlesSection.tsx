@@ -56,26 +56,35 @@ const articlesData: Article[] = [
 
 const ArticlesSection = () => {
   return (
-    <section id="articles" className="bg-brand-light-navy">
-      <div className="container mx-auto">
-        <h2 className="section-title animate-on-scroll">My Writings</h2>
+    <section id="articles" className="bg-brand-light-navy py-16">
+      <div className="container mx-auto px-4">
+        <h2 className="section-title animate-on-scroll text-center text-3xl font-bold text-white mb-12">
+          My Writings
+        </h2>
+
         {articlesData.length > 0 ? (
-          <div className="space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {articlesData.map((article, index) => (
               <div
                 key={article.id}
-                className="bg-brand-deep-blue p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-brand-teal/20 transform hover:-translate-y-1 animate-on-scroll"
+                className="relative animate-on-scroll bg-brand-deep-blue p-6 rounded-xl shadow-xl hover:shadow-brand-teal/20 transition-all duration-300"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
+                {/* Decorative left border */}
+                <div className="absolute top-0 bottom-0 left-0 w-1 bg-brand-teal rounded-l-xl"></div>
+
                 <div className="flex items-center mb-2">
-                   <Pen className="text-brand-teal mr-3 shrink-0" size={20} />
-                  <h3 className="text-xl md:text-2xl font-semibold text-brand-light-slate">
-                    <a href={article.link} target="_blank" rel="noopener noreferrer" className="hover:text-brand-teal transition-colors">
+                  <Pen className="text-brand-teal mr-3 shrink-0" size={20} />
+                  <h3 className="text-xl font-semibold text-brand-light-slate hover:text-brand-teal transition-colors">
+                    <a href={article.link} target="_blank" rel="noopener noreferrer">
                       {article.title}
                     </a>
                   </h3>
                 </div>
-                <p className="text-xs text-brand-slate font-mono mb-3">{article.platform} &bull; {article.date}</p>
+
+                <p className="text-xs text-brand-slate font-mono mb-3">
+                  {article.platform} &bull; {article.date}
+                </p>
                 <p className="text-brand-slate text-sm mb-4">{article.excerpt}</p>
                 <a
                   href={article.link}
@@ -89,7 +98,9 @@ const ArticlesSection = () => {
             ))}
           </div>
         ) : (
-          <p className="text-center text-brand-slate animate-on-scroll">I haven't published any articles yet, but stay tuned!</p>
+          <p className="text-center text-brand-slate animate-on-scroll">
+            I haven't published any articles yet, but stay tuned!
+          </p>
         )}
       </div>
     </section>

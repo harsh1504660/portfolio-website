@@ -18,52 +18,54 @@ const projectsData: Project[] = [
     id: 1,
     title: 'Personal Portfolio Website',
     description: 'The very website you are browsing! Built with React, TypeScript, Tailwind CSS, and Vite. Showcases my skills and projects in a clean, responsive design.',
-    imageUrl: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
+    imageUrl: '/ss.png',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-    liveLink: '#', // Link to itself
+    liveLink: 'https://harsh-joshi-portfolio-zeta.vercel.app/', // Link to itself
+    repoLink:'https://github.com/harsh1504660/portfolio-website'
   },
   {
     id: 2,
     title: 'Smart Answer Evaluater',
     description: 'A full-featured e-commerce site with product listings, cart functionality, user authentication, and a Stripe payment integration. Developed using Next.js and Supabase.',
     imageUrl: '/sae1.png',
-    technologies: ['Next.js', 'Supabase', 'Stripe', 'Tailwind CSS'],
-    liveLink: '#',
-    repoLink: '#',
+    technologies: ['Tensorflow', 'Transformer', 'Flask', 'HTML/CSS','FastAPI'],
+    liveLink: 'https://smart-answer-evaluator.onrender.com',
+    repoLink: 'https://github.com/harsh1504660/Smart-Answer-Evaluator',
   },
   {
     id: 3,
     title: 'Hand Gesture VLC Media Controller',
     description: 'A collaborative task management application allowing users to create, assign, and track tasks. Features real-time updates with Firebase.',
     imageUrl: '/hgvc.png',
-    technologies: ['React', 'Firebase', 'Material UI'],
-    liveLink: '#',
+    technologies: ['Tensorflow', 'Tkinter', 'Material UI'],
+    repoLink: 'https://github.com/harsh1504660/Gesture-Media-Controller',
   },
   {
     id: 4,
     title: "Agri Spectra AI [MVP]",
     description: "This is a fantastic project that does amazing things with modern technology. More details coming soon! You can replace this text.",
-    imageUrl: 'https://via.placeholder.com/500x280/64FFDA/0A192F?text=Project+Alpha', // Teal bg, Deep Blue text
-    technologies: ['Placeholder Tech 1', 'Placeholder Tech 2', 'Animated CSS'],
-    liveLink: '#',
-    repoLink: '#',
+    imageUrl: '/agri.png', // Teal bg, Deep Blue text
+    technologies: ['Node.js', 'React', 'Python', 'Firebase','GCP'],
+    liveLink: 'https://agri-spectra.com/',
+
   },
   {
     id: 5,
     title: "Diabetes Prediction App",
     description: "A suite of tools designed to boost creativity and productivity. Stay tuned for the launch. Feel free to update this.",
     imageUrl: '/dd.png', // Hot Pink bg, Deep Blue text
-    technologies: ['Interactive SVG', 'Web Animations API', 'Cartoon.js'],
-    liveLink: '#',
-    repoLink: '#',
+    technologies: ['Scikit-learn', 'Streamlit', 'MLFlow', 'Pandas'],
+    liveLink: 'https://diabetes-predictor-ankmxawcztpjgcsmlkyybw.streamlit.app/',
+    repoLink: 'https://github.com/harsh1504660/Diabetes-Predictor',
   },
   {
     id: 6,
     title: "Laptop Price Predictor",
     description: "Exploring new frontiers in web development and user experience. Exciting updates ahead! This description is editable.",
     imageUrl:'/lpp.png', // Blue Violet bg, White text
-    technologies: ['Next-Gen Framework', 'AI Integrations', 'Funky Animations'],
-    liveLink: '#',
+    technologies: ['Scikit-Learn', 'Streamlit', 'Numpy', 'Pandas'],
+    liveLink: 'https://laptop-price-predictor-jsbziud4ibtybumfx7mmkj.streamlit.app/',
+    repoLink: 'https://github.com/harsh1504660/Laptop-price-predictor'
   },
 ];
 
@@ -173,7 +175,7 @@ const ProjectsSection = () => {
           <Button 
             variant="outline"
             className="border-brand-teal text-brand-teal hover:bg-brand-teal hover:text-brand-deep-blue py-3 px-8 text-lg transition-all duration-300 group relative overflow-hidden"
-            onClick={() => window.open('https://github.com/yourusername', '_blank')} // Remember to update 'yourusername'
+            onClick={() => window.open('https://github.com/harsh1504660', '_blank')} // Remember to update 'yourusername'
           >
             <span className="relative z-10 group-hover:translate-x-2 transition-transform duration-300 flex items-center">
               View More on GitHub 

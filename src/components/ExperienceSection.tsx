@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface ExperienceItem {
@@ -13,75 +12,90 @@ interface ExperienceItem {
 const experienceData: ExperienceItem[] = [
   {
     id: 1,
-    title: 'Software Engineer',
-    company: 'Tech Solutions Inc.',
+    title: 'Data Science Intern',
+    company: 'Agri Spectra AI Inc.',
     companyLink: '#',
-    date: 'Jan 2022 - Present',
+    date: 'Oct 2024 - May 2025',
     responsibilities: [
-      'Developed and maintained web applications using React, Node.js, and TypeScript.',
-      'Collaborated with cross-functional teams to define, design, and ship new features.',
-      'Integrated third-party APIs and services.',
-      'Wrote clean, maintainable, and testable code.',
+      'Dveloped and maintained data pipelines for agricultural data analysis.',
+      'Implemented machine learning models to detect crop diseases in hyperspectral images.',
+      'Implemented MLFlow for model management and deployment.',
+      'Developed MVP for the company\'s flagship product.',
+      'Integrated firestore for real-time data storage and retrieval.',
     ],
   },
   {
     id: 2,
-    title: 'Junior Web Developer',
-    company: 'Innovatech Ltd.',
+    title: 'Freelance Technical Writer',
+    company: 'In plain English pvt. ltd.',
     companyLink: '#',
-    date: 'Jun 2020 - Dec 2021',
+    date: 'Sep 2023 - Present',
     responsibilities: [
-      'Assisted in the development of client websites using HTML, CSS, and JavaScript.',
-      'Participated in code reviews and agile development processes.',
-      'Helped troubleshoot and debug issues.',
+      'Researched and wrote technical articles on various topics.',
+      'Articles included tutorials, product reviews, and industry insights.',
+      'Focused on machine learning techniques and their applications.',
+      'Published 5 articles on medium.com for the company.',
     ],
   },
   {
     id: 3,
-    title: 'Web Development Intern',
-    company: 'Creative Web Agency',
+    title: 'Member of Programming Team',
+    company: 'D.Y. Patil Robotics & AI Club (DRAIC)',
     companyLink: '#',
-    date: 'Jan 2020 - May 2020',
+    date: 'Jan 2023 - May 2024',
     responsibilities: [
-      'Learned and applied fundamental web development concepts.',
-      'Supported senior developers with various tasks.',
-      'Contributed to small features and bug fixes on internal projects.',
+      'Worked on various projects involving robotics and AI.',
+      'Bots like line following, obstacle avoidance, and object detection.',
+      'Integrated AI algorithms for enhanced functionality.',
     ],
   },
 ];
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="bg-brand-light-navy">
-      <div className="container mx-auto">
-        <h2 className="section-title animate-on-scroll">Work Experience</h2>
+    <section id="experience" className="bg-brand-light-navy py-16">
+      <div className="container mx-auto px-4">
+        <h2 className="section-title animate-on-scroll mb-12 text-center text-3xl font-bold text-white">
+          Work Experience
+        </h2>
         <div className="relative">
           {/* Timeline line */}
-          <div className="hidden md:block absolute top-0 bottom-0 left-1/2 w-0.5 bg-brand-slate/50 transform -translate-x-1/2"></div>
+          <div className="absolute top-0 bottom-0 left-4 md:left-1/2 w-0.5 bg-brand-slate/50 transform md:-translate-x-1/2"></div>
 
           {experienceData.map((item, index) => (
             <div
               key={item.id}
-              className={`mb-12 flex md:items-start animate-on-scroll ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
+              className={`mb-12 flex flex-col md:items-start md:flex-row ${
+                index % 2 !== 0 ? 'md:flex-row-reverse' : ''
+              } animate-on-scroll`}
               style={{ animationDelay: `${index * 0.15}s` }}
             >
-              <div className="hidden md:flex flex-col items-center w-1/2 px-4">
-                {/* Spacer for non-active side */}
-              </div>
-              
-              {/* Circle on timeline */}
-              <div className="hidden md:flex absolute top-1 left-1/2 w-6 h-6 bg-brand-teal rounded-full border-4 border-brand-light-navy transform -translate-x-1/2 -translate-y-0.5 items-center justify-center">
-              </div>
+              {/* Timeline circle */}
+              <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-brand-teal rounded-full border-4 border-brand-light-navy transform md:-translate-x-1/2 -translate-y-1"></div>
+
+              {/* Spacer for alignment in md view */}
+              <div className="hidden md:flex flex-col items-center w-1/2 px-4" />
 
               {/* Content Card */}
-              <div className="w-full md:w-1/2 bg-brand-deep-blue p-6 rounded-lg shadow-lg md:mx-4 relative">
-                 {/* Pointer for md screens */}
-                <div className={`hidden md:block absolute top-4 h-0 w-0 border-t-8 border-b-8 ${index % 2 === 0 ? '-right-3 border-l-8 border-l-brand-deep-blue border-r-0 border-transparent' : '-left-3 border-r-8 border-r-brand-deep-blue border-l-0 border-transparent'}`}></div>
-                
+              <div className="w-full md:w-1/2 bg-brand-deep-blue p-6 rounded-lg shadow-lg md:mx-4 relative ml-10 md:ml-0">
+                {/* Pointer (desktop only) */}
+                <div
+                  className={`hidden md:block absolute top-4 h-0 w-0 border-t-8 border-b-8 ${
+                    index % 2 === 0
+                      ? '-right-3 border-l-8 border-l-brand-deep-blue border-r-0 border-transparent'
+                      : '-left-3 border-r-8 border-r-brand-deep-blue border-l-0 border-transparent'
+                  }`}
+                ></div>
+
                 <h3 className="text-2xl font-semibold text-brand-light-slate mb-1">{item.title}</h3>
                 <p className="text-brand-teal mb-1">
                   {item.companyLink ? (
-                    <a href={item.companyLink} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    <a
+                      href={item.companyLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
                       {item.company}
                     </a>
                   ) : (

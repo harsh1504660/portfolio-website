@@ -18,7 +18,7 @@ const ContactSection = () => {
             variant="outline"
             className="border-brand-teal text-brand-teal hover:bg-brand-teal hover:text-brand-deep-blue py-4 px-10 text-lg transition-all duration-300"
           >
-            <a href="mailto:your.email@example.com">Say Hello</a>
+            <a href="mailto:harshsmj1504@gmail.com">Say Hello</a>
           </Button>
         </div>
 

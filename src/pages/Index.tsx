@@ -11,7 +11,7 @@ import ArticlesSection from '@/components/ArticlesSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import useIntersectionObserver from '@/hooks/useIntersectionObserver';
-import { Analytics } from '@vercel/analytics/next';
+
 const Index = () => {
   const { observeElementsByClass } = useIntersectionObserver({ threshold: 0.15, rootMargin: '0px 0px -10% 0px'});
 
@@ -30,7 +30,7 @@ const Index = () => {
         <SkillsSection />
         <ProjectsSection />
         <ExperienceSection />
-        <Analytics />
+
         <CertificatesSection />
         <ArticlesSection />
         <ContactSection />

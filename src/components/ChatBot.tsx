@@ -74,8 +74,8 @@ const ChatBot = () => {
     setInput('');
 
     try {
-      const res = await fetch('https://harsh-chatbot.onrender.com/chat', {
-        mode  :'no-cors',
+      const res = await fetch('http://localhost:8000/chat', {
+      
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

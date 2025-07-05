@@ -6,13 +6,12 @@ const skillsData = [
   { name: 'Python & Django', Icon: Code, description: "Full-stack development with Python, creating robust web applications." },
   { name: 'TensorFlow & Pytorch', Icon: Bot, description: "building and training deep learning models for computer vision and classification tasks." },
   { name: 'HugginFace & MLflow', Icon: Library, description: "managing machine learning workflows and transformers for state-of-the-art NLP model development." },
-  { name: 'JavaScript (ES6+)', Icon: Code, description: "Modern JavaScript development including asynchronous programming, and new syntax features." },
   { name: 'React & Next.js', Icon: Code, description: "Building dynamic and responsive user interfaces with component-based architecture." },
-  { name: 'TypeScript', Icon: Code, description: "Enhancing JavaScript projects with static typing for better scalability and maintainability." },
+  { name: 'LangChain', Icon: Code, description: "A modular function that connects language models to external data or services, enabling dynamic, multi-step reasoning workflows." },
   { name: 'Node.js & Express', Icon: Database, description: "Developing server-side applications and RESTful APIs." },
   { name: 'Databases (SQL & NoSQL)', Icon: Database, description: "Working with MongoDB, and Firebase for data storage and management." },
   { name: 'Cloud Platforms (GCP, Vercel)', Icon: Cloud, description: "Deploying and managing applications on cloud infrastructure." },
-  { name: 'UI/UX Design Principles', Icon: Zap, description: "Basic understanding of design principles for creating user-friendly interfaces." },
+  
 ];
 
 const SkillsSection = () => {

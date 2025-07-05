@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@/components/ui/button'; // Assuming you have a Button component
+import { Button } from '@/components/ui/button'; // Replace or customize if needed
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -22,7 +22,8 @@ const HeroSection = () => {
         <p className="text-brand-slate text-base sm:text-lg md:text-xl max-w-xl mx-auto mb-12">
           I'm an AI/ML enthusiast with experience in deep learning, computer vision, and data science. I build real-world projects in areas like chemical reaction prediction, plant disease detection, and food analysis.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+        <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center">
           <Button
             onClick={scrollToContact}
             variant="outline"
@@ -30,6 +31,7 @@ const HeroSection = () => {
           >
             Get In Touch
           </Button>
+
           <a
             href="/harsh_joshi_resume.pdf"
             download
@@ -41,6 +43,14 @@ const HeroSection = () => {
               className="border-brand-teal text-brand-teal hover:bg-brand-teal hover:text-brand-deep-blue py-3 px-8 text-lg transition-all duration-300"
             >
               My Resume
+            </Button>
+          </a>
+
+          <a href="/bot">
+            <Button
+              className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-purple-500 hover:to-pink-500 text-white py-3 px-8 text-lg font-semibold shadow-lg transition-all duration-300"
+            >
+              💬 Chat with AI
             </Button>
           </a>
         </div>

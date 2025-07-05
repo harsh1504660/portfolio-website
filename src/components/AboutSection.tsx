@@ -8,11 +8,9 @@ const AboutSection = () => {
         <h2 className="section-title animate-on-scroll">About Me</h2>
         <div className="grid md:grid-cols-5 gap-10 items-center">
           <div className="md:col-span-3 text-brand-slate space-y-6 animate-on-scroll" style={{ animationDelay: '0.2s' }}>
-            <p>
-              I'm Harsh Joshi, a B.E. student in Electronics and Telecommunications at DYPCOE, Pune, with hands-on experience building impactful AI/ML solutions across domains like chemical reaction prediction, plant disease detection, and food ingredient analysis. My work bridges science and technology, using tools like TensorFlow, PyTorch, and Hugging Face to transform raw data into intelligent systems.
-              </p>
+     
               <p>
-               I've led and contributed to projects involving computer vision, NLP, and hyperspectral data analysis, backed by a strong foundation in problem-solving and participation in national-level hackathons. Passionate about applying AI for real-world impact, I’m eager to collaborate on innovative and socially relevant AI applications.
+               I'm Harsh Joshi, a B.E. student in Electronics and Telecommunications at DYPCOE, Pune, with hands-on experience in building AI/ML solutions across domains like chemical reaction prediction, plant disease detection, and food analysis. I work with tools like TensorFlow, PyTorch, and Hugging Face, and have contributed to projects involving computer vision, NLP, and hyperspectral data. Passionate about applying AI for real-world impact, I actively participate in national hackathons and enjoy solving complex problems.
             </p>
             <p>
               Here are a few technologies I've been working with recently:

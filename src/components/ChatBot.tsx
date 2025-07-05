@@ -74,7 +74,7 @@ const ChatBot = () => {
     setInput('');
 
     try {
-      const res = await fetch('https://corsproxy.io/?https://harsh-chatbot.onrender.com/chat', {
+      const res = await fetch('https://harsh-chatbot.onrender.com/chat', {
         mode  :'no-cors',
         method: 'POST',
         headers: {

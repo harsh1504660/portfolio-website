@@ -74,7 +74,7 @@ const ChatBot = () => {
     setInput('');
 
     try {
-      const res = await fetch('http://localhost:8000/chat', {
+      const res = await fetch('https://harsh-chatbot.onrender.com/chat', {
       
         method: 'POST',
         headers: {

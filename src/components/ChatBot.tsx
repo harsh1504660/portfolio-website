@@ -74,7 +74,7 @@ const ChatBot = () => {
     setInput('');
 
     try {
-      const res = await fetch('https://harsh-chatbot.onrender.com/chat', {
+      const res = await fetch('http://localhost:8000/chat', {
       
         method: 'POST',
         headers: {
@@ -108,7 +108,7 @@ const ChatBot = () => {
       className="min-h-[calc(100vh-80px)] pt-28 px-4 text-brand-slate flex items-center justify-center"
       style={{ backgroundColor: 'rgba(10, 25, 47, 1)' }}
     >
-      <div className="w-full max-w-4xl h-[70vh] flex flex-col bg-[#1e293b] rounded-xl shadow-lg border border-slate-600 overflow-hidden">
+      <div className="w-full max-w-6xl h-[70vh] flex flex-col bg-[#1e293b] rounded-xl shadow-lg border border-slate-600 overflow-hidden">
         {/* Header */}
         <div className="bg-gradient-to-r from-teal-700 to-slate-700 text-white text-xl font-semibold px-6 py-4 flex items-center justify-between">
           <span>🤖 Harsh’s Personal Chatbot</span>
@@ -133,11 +133,11 @@ const ChatBot = () => {
                 </div>
               )}
               <div
-                className={`max-w-[70%] px-4 py-2 text-sm rounded-xl shadow ${
-                  msg.sender === 'user'
-                    ? 'bg-teal-600 text-white rounded-br-none'
-                    : 'bg-slate-700 text-slate-200 rounded-bl-none'
-                }`}
+                className={`max-w-[70%] px-3 py-2 text-sm rounded-xl shadow  leading-7 ${
+    msg.sender === 'user'
+      ? 'bg-teal-600 text-white rounded-br-none'
+      : 'bg-slate-700 text-slate-200 rounded-bl-none'
+  }`}
               >
                 {msg.sender === 'user' ? (
                   msg.content

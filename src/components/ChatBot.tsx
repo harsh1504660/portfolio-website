@@ -11,7 +11,7 @@ const ChatBot = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const sessionIdRef = useRef<string>(uuidv4());
-  const [sessionId, setSessionId] = useState(sessionIdRef.current); // Optional: if you display session ID somewhere  
+  const [sessionId, setSessionId] = useState(sessionIdRef.current);
   const [isLoading, setIsLoading] = useState(false);
   const [placeholderIndex, setPlaceholderIndex] = useState(0);
   const [animatePlaceholder, setAnimatePlaceholder] = useState(true);
@@ -27,7 +27,6 @@ const ChatBot = () => {
     "Share your favorite books...",
   ];
 
-  // Load session + chat history
   useEffect(() => {
     setSessionId(uuidv4());
 
@@ -44,17 +43,14 @@ const ChatBot = () => {
     }
   }, []);
 
-  // Auto-scroll
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, isLoading]);
 
-  // Save chat to localStorage
   useEffect(() => {
     localStorage.setItem('chat_history', JSON.stringify(messages));
   }, [messages]);
 
-  // Placeholder animation
   useEffect(() => {
     const interval = setInterval(() => {
       setAnimatePlaceholder(false);
@@ -76,15 +72,14 @@ const ChatBot = () => {
 
     try {
       const res = await fetch('https://harsh-chatbot.onrender.com/chat', {
-      
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-  user_input: input,
-  session_id: sessionIdRef.current,
-}),
+          user_input: input,
+          session_id: sessionIdRef.current,
+        }),
       });
 
       const data = await res.json();
@@ -97,23 +92,23 @@ const ChatBot = () => {
     }
   };
 
- const handleNewChat = () => {
-  setMessages([]);
-  setInput('');
-  localStorage.removeItem('chat_history');
-  const newId = uuidv4();
-  sessionIdRef.current = newId;
-  setSessionId(newId);  // Optional: keeps UI session state in sync
-};
+  const handleNewChat = () => {
+    setMessages([]);
+    setInput('');
+    localStorage.removeItem('chat_history');
+    const newId = uuidv4();
+    sessionIdRef.current = newId;
+    setSessionId(newId);
+  };
 
   return (
     <div
-      className="min-h-[calc(100vh-80px)] pt-28 px-4 text-brand-slate flex items-center justify-center"
+      className="min-h-[calc(100vh-80px)] pt-28 px-4 sm:px-2 text-brand-slate flex items-center justify-center"
       style={{ backgroundColor: 'rgba(10, 25, 47, 1)' }}
     >
-      <div className="w-full max-w-6xl h-[70vh] flex flex-col bg-[#1e293b] rounded-xl shadow-lg border border-slate-600 overflow-hidden">
+      <div className="w-full max-w-6xl h-[70vh] sm:h-[85vh] flex flex-col bg-[#1e293b] rounded-xl shadow-lg border border-slate-600 overflow-hidden">
         {/* Header */}
-        <div className="bg-gradient-to-r from-teal-700 to-slate-700 text-white text-xl font-semibold px-6 py-4 flex items-center justify-between">
+        <div className="bg-gradient-to-r from-teal-700 to-slate-700 text-white text-xl sm:text-lg font-semibold px-6 sm:px-4 py-4 flex items-center justify-between">
           <span>🤖 Harsh’s Personal Chatbot</span>
           <button
             onClick={handleNewChat}
@@ -124,7 +119,7 @@ const ChatBot = () => {
         </div>
 
         {/* Chat Area */}
-        <div className="flex-1 overflow-y-auto px-6 py-4 space-y-4 bg-[#1e293b] scrollbar-thin scrollbar-thumb-teal-600 scrollbar-track-transparent">
+        <div className="flex-1 overflow-y-auto px-6 sm:px-3 py-4 sm:py-3 space-y-4 bg-[#1e293b] scrollbar-thin scrollbar-thumb-teal-600 scrollbar-track-transparent">
           {messages.map((msg, index) => (
             <div
               key={index}
@@ -136,11 +131,11 @@ const ChatBot = () => {
                 </div>
               )}
               <div
-                className={`max-w-[70%] px-3 py-2 text-sm rounded-xl shadow  leading-7 ${
-    msg.sender === 'user'
-      ? 'bg-teal-600 text-white rounded-br-none'
-      : 'bg-slate-700 text-slate-200 rounded-bl-none'
-  }`}
+                className={`max-w-[70%] sm:max-w-[85%] px-3 py-2 text-sm sm:text-sm rounded-xl shadow leading-6 ${
+                  msg.sender === 'user'
+                    ? 'bg-teal-600 text-white rounded-br-none'
+                    : 'bg-slate-700 text-slate-200 rounded-bl-none'
+                }`}
               >
                 {msg.sender === 'user' ? (
                   msg.content
@@ -162,7 +157,7 @@ const ChatBot = () => {
               <div className="w-8 h-8 rounded-full bg-slate-600 text-white flex items-center justify-center mr-2 text-base">
                 🤖
               </div>
-              <div className="bg-slate-700 text-slate-200 text-sm px-4 py-2 rounded-xl rounded-bl-none max-w-[70%] shadow">
+              <div className="bg-slate-700 text-slate-200 text-sm px-4 py-2 rounded-xl rounded-bl-none max-w-[70%] sm:max-w-[85%] shadow">
                 <span className="typing-dots flex gap-1">
                   <span className="dot one" />
                   <span className="dot two" />
@@ -176,7 +171,7 @@ const ChatBot = () => {
         </div>
 
         {/* Input Bar */}
-        <div className="border-t border-slate-600 px-4 py-3 bg-[#1e293b] flex gap-2 relative">
+        <div className="border-t border-slate-600 px-4 py-3 sm:px-2 sm:py-2 bg-[#1e293b] flex gap-2 relative">
           {!isInputFocused && !input.trim() && (
             <div className="absolute left-9 top-1/2 transform -translate-y-1/2 pointer-events-none text-slate-400 text-sm transition-all duration-300 ease-in-out select-none">
               <span
@@ -190,7 +185,7 @@ const ChatBot = () => {
           )}
           <input
             type="text"
-            className="flex-1 bg-slate-800 text-white border border-slate-600 rounded-full px-5 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600 placeholder:text-transparent"
+            className="flex-1 bg-slate-800 text-white border border-slate-600 rounded-full px-5 py-2 sm:px-3 sm:py-2 focus:outline-none focus:ring-2 focus:ring-teal-600 placeholder:text-transparent"
             placeholder="..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -202,7 +197,7 @@ const ChatBot = () => {
           />
           <button
             onClick={sendMessage}
-            className="bg-teal-600 hover:bg-teal-500 text-white px-6 py-2 rounded-full shadow transition"
+            className="bg-teal-600 hover:bg-teal-500 text-white px-6 sm:px-3 py-2 rounded-full shadow transition"
           >
             Send
           </button>

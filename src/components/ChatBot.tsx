@@ -105,7 +105,7 @@ const ChatBot = () => {
    <div
   className="min-h-screen pt-28 px-4 sm:px-2 text-brand-slate flex items-center justify-center bg-[#0a192f]"
 >
-<div className="w-full max-w-6xl h-[calc(100vh-180px)] md:h-[70vh] flex flex-col bg-[#1e293b] rounded-xl shadow-lg border border-slate-600 overflow-hidden">
+<div className="w-full max-w-6xl h-[60vh] md:h-[80vh] flex flex-col bg-[#1e293b] rounded-xl shadow-lg border border-slate-600 overflow-hidden">
     {/* Header */}
     <div className="bg-gradient-to-r from-teal-700 to-slate-700 text-white text-lg sm:text-base font-semibold px-4 py-3 flex items-center justify-between">
       <span>🤖 Harsh’s Personal Chatbot</span>

@@ -10,7 +10,8 @@ interface Message {
 const ChatBot = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
-  const [sessionId, setSessionId] = useState('');
+  const sessionIdRef = useRef<string>(uuidv4());
+  const [sessionId, setSessionId] = useState(sessionIdRef.current); // Optional: if you display session ID somewhere  
   const [isLoading, setIsLoading] = useState(false);
   const [placeholderIndex, setPlaceholderIndex] = useState(0);
   const [animatePlaceholder, setAnimatePlaceholder] = useState(true);
@@ -81,9 +82,9 @@ const ChatBot = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          user_input: input,
-          session_id: sessionId,
-        }),
+  user_input: input,
+  session_id: sessionIdRef.current,
+}),
       });
 
       const data = await res.json();
@@ -96,12 +97,14 @@ const ChatBot = () => {
     }
   };
 
-  const handleNewChat = () => {
-    setMessages([]);
-    setInput('');
-    localStorage.removeItem('chat_history');
-    setSessionId(uuidv4());
-  };
+ const handleNewChat = () => {
+  setMessages([]);
+  setInput('');
+  localStorage.removeItem('chat_history');
+  const newId = uuidv4();
+  sessionIdRef.current = newId;
+  setSessionId(newId);  // Optional: keeps UI session state in sync
+};
 
   return (
     <div

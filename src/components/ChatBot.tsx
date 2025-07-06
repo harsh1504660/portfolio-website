@@ -164,27 +164,26 @@ const ChatBot = () => {
       <div ref={messagesEndRef} />
     </div>
 
-    {/* Input */}
-    <div className="border-t border-slate-600 px-4 py-3 bg-[#1e293b] flex gap-2 items-center">
-      <input
-        type="text"
-        className="flex-1 bg-slate-800 text-white border border-slate-600 rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600 text-sm placeholder:text-slate-400"
-        placeholder={placeholders[placeholderIndex]}
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        onFocus={() => setIsInputFocused(true)}
-        onBlur={() => {
-          if (!input.trim()) setIsInputFocused(false);
-        }}
-        onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
-      />
-      <button
-        onClick={sendMessage}
-        className="bg-teal-600 hover:bg-teal-500 text-white px-5 py-2 rounded-full shadow text-sm transition"
-      >
-        Send
-      </button>
-    </div>
+    <div className="border-t border-slate-600 px-4 py-3 bg-[#1e293b] flex flex-wrap items-center gap-2">
+  <input
+    type="text"
+    className="flex-1 min-w-0 bg-slate-800 text-white border border-slate-600 rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600 text-sm placeholder:text-slate-400"
+    placeholder={placeholders[placeholderIndex]}
+    value={input}
+    onChange={(e) => setInput(e.target.value)}
+    onFocus={() => setIsInputFocused(true)}
+    onBlur={() => {
+      if (!input.trim()) setIsInputFocused(false);
+    }}
+    onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
+  />
+  <button
+    onClick={sendMessage}
+    className="bg-teal-600 hover:bg-teal-500 text-white px-6 py-2 rounded-full shadow text-sm transition"
+  >
+    Send
+  </button>
+</div>
 
     {/* Animation */}
     <style>

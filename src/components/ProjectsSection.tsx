@@ -16,15 +16,24 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: 'Personal Portfolio Website',
-    description: 'My portfolio website! Built with React, TypeScript, Tailwind CSS, and Vite. Showcases my skills and projects in a clean, responsive design.',
-    imageUrl: '/ss.png',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-    liveLink: 'https://harsh-joshi-portfolio-zeta.vercel.app/', // Link to itself
-    repoLink:'https://github.com/harsh1504660/portfolio-website'
+    title: 'EduPath AI',
+    description: 'EduPath AI is an AI-powered educational platform that provides personalized learning paths for students. It uses LLAMA 3 to to create customized roadmap and learning resources based on user input. It created quiz and solves doubts using AI.',
+    imageUrl: '/ep.png',
+    technologies: ['Langchain','FastAPI', 'Pinecone','React', 'Tailwind CSS'],
+    liveLink: 'https://edu-path-ai-theta.vercel.app/', // Link to itself
+    repoLink:'https://github.com/harsh1504660/EduPath-AI'
   },
   {
     id: 2,
+    title: 'Personal Chatbot',
+    description: 'A personal chatbot that can answer questions about me, my projects, and my interests. It uses a transformer model to understand and respond to user queries. It can also provide insights into my skills and experiences.',
+    imageUrl: '/ss.png',
+    technologies: ['Langchain','FastAPI', 'Pinecone','React', 'Tailwind CSS'],
+    liveLink: 'https://harsh-joshi-portfolio-zeta.vercel.app/bot', // Link to itself
+    repoLink:'https://github.com/harsh1504660/Personal_ChatBot'
+  },
+  {
+    id: 3,
     title: 'Smart Answer Evaluater',
     description: 'AI enabled answer evaluator that uses a transformer model to evaluate answers based on the given question. It provides a score and feedback on the answer.',
     imageUrl: '/sae1.png',
@@ -33,7 +42,7 @@ const projectsData: Project[] = [
     repoLink: 'https://github.com/harsh1504660/Smart-Answer-Evaluator',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Hand Gesture VLC Media Controller',
     description: 'A hand gesture-based media controller that uses computer vision to control VLC media player. It recognizes hand gestures and maps them to media controls like play, pause, next, and previous.',
     imageUrl: '/hgvc.png',
@@ -41,7 +50,7 @@ const projectsData: Project[] = [
     repoLink: 'https://github.com/harsh1504660/Gesture-Media-Controller',
   },
   {
-    id: 4,
+    id: 5,
     title: "Agri Spectra AI [MVP]",
     description: "Agri Spectra AI is an AI-powered platform that provides insights into agricultural data. It uses machine learning to analyze crop health, predict yields, and optimize farming practices.",
     imageUrl: '/agri.png', // Teal bg, Deep Blue text
@@ -50,22 +59,13 @@ const projectsData: Project[] = [
 
   },
   {
-    id: 5,
+    id: 6,
     title: "Diabetes Prediction App",
     description: "A web application that predicts the likelihood of diabetes based on user input. It uses machine learning models to analyze health data and provide predictions.",
     imageUrl: '/dd.png', // Hot Pink bg, Deep Blue text
     technologies: ['Scikit-learn', 'Streamlit', 'MLFlow', 'Pandas'],
     liveLink: 'https://diabetes-predictor-ankmxawcztpjgcsmlkyybw.streamlit.app/',
     repoLink: 'https://github.com/harsh1504660/Diabetes-Predictor',
-  },
-  {
-    id: 6,
-    title: "Laptop Price Predictor",
-    description: "A web application that predicts laptop prices based on specifications. It uses machine learning models to analyze laptop features and provide price predictions.",
-    imageUrl:'/lap.jpg', // Blue Violet bg, White text
-    technologies: ['Scikit-Learn', 'Streamlit', 'Numpy', 'Pandas'],
-    liveLink: 'https://laptop-price-predictor-jsbziud4ibtybumfx7mmkj.streamlit.app/',
-    repoLink: 'https://github.com/harsh1504660/Laptop-price-predictor'
   },
 ];
 

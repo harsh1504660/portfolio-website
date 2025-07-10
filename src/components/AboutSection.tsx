@@ -17,7 +17,7 @@ const AboutSection = () => {
             </p>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-2 font-mono text-sm">
               <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">Machine Learning (ES6+)</li>
-              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">Depp Learning</li>
+              <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">Deep Learning</li>
               <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">Natural Language Processing</li>
               <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">Computer Vision</li>
               <li className="before:content-['▹'] before:mr-2 before:text-brand-teal">MLOps</li>

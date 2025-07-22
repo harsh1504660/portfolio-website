@@ -32,8 +32,17 @@ const projectsData: Project[] = [
     liveLink: 'https://harsh-joshi-portfolio-zeta.vercel.app/bot', // Link to itself
     repoLink:'https://github.com/harsh1504660/Personal_ChatBot'
   },
-  {
+    {
     id: 3,
+    title: 'VoiceCast AI',
+    description: 'AI powered podcast audio and video podcast generator, with topic wise thumbnail and global podcast feed.',
+    imageUrl: '/SS11.png',
+    technologies: ['Langchain', 'PostgreSQL', 'React','FastAPI'],
+    liveLink: 'https://voicecast-ai.netlify.app/',
+    repoLink: 'https://github.com/harsh1504660/VoiceCast-AI',
+  },
+  {
+    id: 4,
     title: 'Smart Answer Evaluater',
     description: 'AI enabled answer evaluator that uses a transformer model to evaluate answers based on the given question. It provides a score and feedback on the answer.',
     imageUrl: '/sae1.png',
@@ -42,7 +51,7 @@ const projectsData: Project[] = [
     repoLink: 'https://github.com/harsh1504660/Smart-Answer-Evaluator',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Hand Gesture VLC Media Controller',
     description: 'A hand gesture-based media controller that uses computer vision to control VLC media player. It recognizes hand gestures and maps them to media controls like play, pause, next, and previous.',
     imageUrl: '/hgvc.png',
@@ -50,7 +59,7 @@ const projectsData: Project[] = [
     repoLink: 'https://github.com/harsh1504660/Gesture-Media-Controller',
   },
   {
-    id: 5,
+    id: 6,
     title: "Agri Spectra AI [MVP]",
     description: "Agri Spectra AI is an AI-powered platform that provides insights into agricultural data. It uses machine learning to analyze crop health, predict yields, and optimize farming practices.",
     imageUrl: '/agri.png', // Teal bg, Deep Blue text
@@ -59,7 +68,7 @@ const projectsData: Project[] = [
 
   },
   {
-    id: 6,
+    id: 7,
     title: "Diabetes Prediction App",
     description: "A web application that predicts the likelihood of diabetes based on user input. It uses machine learning models to analyze health data and provide predictions.",
     imageUrl: '/dd.png', // Hot Pink bg, Deep Blue text

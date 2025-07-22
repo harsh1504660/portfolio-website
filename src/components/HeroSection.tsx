@@ -33,7 +33,7 @@ const HeroSection = () => {
           </Button>
 
           <a
-            href="/harsh_joshi_resume.pdf"
+            href="/Harsh-Joshi-Resume.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"

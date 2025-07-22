@@ -35,7 +35,7 @@ const projectsData: Project[] = [
     {
     id: 3,
     title: 'VoiceCast AI',
-    description: 'AI powered podcast audio and video podcast generator, with topic wise thumbnail and global podcast feed.',
+    description: 'An AI-powered system that generates both audio and video podcasts from user-provided topics, featuring automated thumbnail creation based on the topic and a centralized global podcast feed for easy access and distribution',
     imageUrl: '/SS11.png',
     technologies: ['Langchain', 'PostgreSQL', 'React','FastAPI'],
     liveLink: 'https://voicecast-ai.netlify.app/',

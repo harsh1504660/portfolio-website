@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio! This site showcases my work as a Full‑Stack AI/ML Developer, highlighting projects, skills, and ways to connect.
 
+
+🔗 **Live Demo / GitHub Repo**: [Portfolio](https://harsh-joshi-portfolio-zeta.vercel.app/)
 ---
 
 ## 📄 About the Project

@@ -21,6 +21,7 @@ A modern, responsive portfolio website built with **React**, **Tailwind CSS**, a
 - **Clean and minimal UI** with smooth animations and intuitive navigation  
 - **Dark & light mode toggle** for user preference  
 - **Project sections** with live previews or demo links  
+- **Personal Chatbot** instant answers for all your personal questions
 - **Contact form** that integrates with backend or email  
 - **Responsive design** optimized for mobile and desktop  
 - **SEO-friendly** metadata and easy customization

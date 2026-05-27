@@ -10,8 +10,21 @@ interface ExperienceItem {
 }
 
 const experienceData: ExperienceItem[] = [
-  {
+   {
     id: 1,
+    title: 'Computer Vision Engineer',
+    company: 'Suvansys',
+    companyLink: '#',
+    date: 'Oct 2025 - Present',
+    responsibilities: [
+'Developed and optimized computer vision pipelines for virtual try-on (VTON) applications using deep learning techniques.',
+'Implemented image segmentation and garment parsing models for accurate clothing extraction and alignment.',
+'Built and improved image preprocessing workflows to enhance virtual try-on quality and realism.',
+'Collaborated on developing MVP features and integrating AI models into production workflows.'
+    ],
+  },
+  {
+    id: 2,
     title: 'Data Science Intern',
     company: 'Agri Spectra AI Inc.',
     companyLink: '#',
@@ -25,7 +38,7 @@ const experienceData: ExperienceItem[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Freelance Technical Writer',
     company: 'In plain English pvt. ltd.',
     companyLink: '#',
@@ -38,7 +51,7 @@ const experienceData: ExperienceItem[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Member of Programming Team',
     company: 'D.Y. Patil Robotics & AI Club (DRAIC)',
     companyLink: '#',
